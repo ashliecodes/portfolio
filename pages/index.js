@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
+import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -51,18 +52,40 @@ export default function Home() {
           </a>
         </div>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
+      <div className={styles.btnContainer}>
+        <a href="ashliecv.pdf" target="_blank">
+          <button className={styles.resumeBtn}>Resume</button>
         </a>
+      </div>
+      <footer className={styles.footer}>
+        <button>
+          <a
+            href="https://twitter.com/ashliecodes"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaTwitter size="40px" />
+          </a>
+        </button>
+
+        <button>
+          <a
+            href="https://www.linkedin.com/in/ashlie-p-a0131317a/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaLinkedin size="40px" />
+          </a>
+        </button>
+        <button>
+          <a
+            href="https://github.com/ashliecodes"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaGithub size="40px" />
+          </a>
+        </button>
       </footer>
     </div>
   );
