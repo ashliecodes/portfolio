@@ -11,15 +11,12 @@ function Projects() {
           <p>Find in-depth information about Next.js features and API.</p>
         </a>
 
-        <a href="https://nextjs.org/learn" className={styles.card}>
+        <a href="https://hackaplanner.netlify.app" className={styles.card}>
           <h2>Hackaplanner &rarr;</h2>
           <p>Learn about Next.js in an interactive course with quizzes!</p>
         </a>
 
-        <a
-          href="https://github.com/vercel/next.js/tree/canary/examples"
-          className={styles.card}
-        >
+        <a href="https://raduno-plans.netlify.app" className={styles.card}>
           <h2>Raduno! &rarr;</h2>
           <p>Discover and deploy boilerplate example Next.js projects.</p>
         </a>
