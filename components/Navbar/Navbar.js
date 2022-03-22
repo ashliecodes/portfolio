@@ -1,9 +1,10 @@
 import Link from "next/link";
+import styles from "./navbar.module.scss";
 
 function Navbar() {
   return (
-    <div>
-      <nav>
+    <div className={styles.container}>
+      <nav className="nav">
         <div className="logo">
           <Link href={"/"}>
             <a>
@@ -11,7 +12,6 @@ function Navbar() {
             </a>
           </Link>
         </div>
-
         <Link href={"/about"}>
           <a>about</a>
         </Link>

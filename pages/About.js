@@ -6,8 +6,8 @@ function About() {
       <h1> about:</h1>
       <p>
         Hi there, my name is Ashlie! After working in the legal industry as a
-        legal assistant, I decided that law wasn&apos;t for me. I found it very
-        boring and tedious and became underwhelmed quickly.
+        legal assistant, I decided that law wasn&apos;t for me. I felt
+        unstimulated and became underwhelmed quickly.
       </p>
       <br />
       <p>
@@ -21,11 +21,11 @@ function About() {
       <p>
         I did the Code First Girls Introduction into Web Development course and
         Introduction into Python Programming course which was my first taste of
-        coding and I wanted more (greedy, I know)!
+        coding and I wanted more... (greedy, I know)!
       </p>
       <br />
       <p>
-        This lead me to join the School of Code where I spent the last couple
+        This led me to join the School of Code where I spent the last couple
         months on the bootcamp learning to code in order to finally kickstart my
         long awaited career in software development.
       </p>
