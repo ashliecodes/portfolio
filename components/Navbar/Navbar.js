@@ -4,12 +4,10 @@ import styles from "./navbar.module.scss";
 function Navbar() {
   return (
     <div className={styles.container}>
-      <nav className="nav">
-        <div className="logo">
+      <nav className={styles.nav}>
+        <div className={styles.logo}>
           <Link href={"/"}>
-            <a>
-              <h1>&lt;ashliecodes/&gt;</h1>
-            </a>
+            <a>&lt;ashliecodes/&gt;</a>
           </Link>
         </div>
         <Link href={"/about"}>

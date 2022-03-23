@@ -1,8 +1,10 @@
-import React from "react";
+import styles from "../styles/about.module.scss";
+import Image from "next/image";
+import portfolioPic from "../images/portfolioPic.jpg";
 
 function About() {
   return (
-    <div>
+    <div className={styles.container}>
       <h1> about:</h1>
       <p>
         Hi there, my name is Ashlie! After working in the legal industry as a
@@ -29,6 +31,15 @@ function About() {
         months on the bootcamp learning to code in order to finally kickstart my
         long awaited career in software development.
       </p>
+      <div className={styles.imgContainer}>
+        <Image
+          className={styles.img}
+          src={portfolioPic}
+          height="300px"
+          width="310px"
+          alt="a picture of ashlie"
+        />
+      </div>
     </div>
   );
 }

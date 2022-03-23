@@ -1,26 +1,53 @@
 import React from "react";
-import styles from "../styles/Home.module.scss";
+import styles from "../styles/projects.module.scss";
 
 function Projects() {
   return (
-    <div>
+    <div className={styles.container}>
       <h1>Projects</h1>
 
       <div className={styles.grid}>
-        <a href="https://nextjs.org/docs" className={styles.card}>
+        <div className={styles.card}>
           <h2>Studio Ghibli App &rarr;</h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+          <p>
+            I used an API to create an app that allows you to search for your
+            favourite Studio Ghibli movies.
+          </p>
+          <button>
+            <a href="" target="_blank" rel="noreferrer">
+              demo
+            </a>
+          </button>
+        </div>
 
-        <a href="https://hackaplanner.netlify.app" className={styles.card}>
+        <div className={styles.card}>
           <h2>Hackaplanner &rarr;</h2>
-          <p>Learn about Next.js in an interactive course with quizzes!</p>
-        </a>
+          <p>A planning app that helps you stay organised</p>
 
-        <a href="https://raduno-plans.netlify.app" className={styles.card}>
+          <button>
+            <a
+              href="https://hackaplanner.netlify.app"
+              target="_blank"
+              rel="noreferrer"
+            >
+              demo
+            </a>
+          </button>
+        </div>
+
+        <div className={styles.card}>
           <h2>Raduno! &rarr;</h2>
-          <p>Discover and deploy boilerplate example Next.js projects.</p>
-        </a>
+          <p>An event creating app</p>
+          <button>
+            <a
+              href="https://raduno-plans.netlify.app"
+              target="_blank"
+              rel="noreferrer"
+            >
+              demo
+            </a>
+          </button>
+        </div>
       </div>
     </div>
   );
