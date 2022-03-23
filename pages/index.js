@@ -17,17 +17,16 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h2 className={styles.title}>
-          Hi! My name is Ashlie and I&apos;m a full-stack developer.
+        <h2 className={styles.intro}>
+          Hi!
+          <br />
+          my name is <span className={styles.myName}>Ashlie</span>
+          <br />
+          and I&apos;m a
+          <div className={styles.fullstackMessage}>
+            full-stack developer<span className={styles.fullstop}>.</span>
+          </div>
         </h2>
-
-        {/* <div>
-          I&apos;m a London based full-stack software developer who enjoys
-          creating and problem-solving.
-          <br />I love all things UI and design, so the ability to design and
-          build applications to create the best possible user experience is
-          something I am very passionate about!
-        </div> */}
 
         <p className={styles.description}>
           I&apos;m a London based full-stack software developer who enjoys
@@ -36,28 +35,41 @@ export default function Home() {
           front-end applications to create the best possible user experience is
           something I&apos;m very passionate about!
         </p>
+        <div className={styles.btnContainer}>
+          <a href="ashliecv.pdf" target="_blank">
+            <button className={styles.resumeBtn}>Resume</button>
+          </a>
+        </div>
       </main>
-      <div className={styles.btnContainer}>
-        <a href="ashliecv.pdf" target="_blank">
-          <button className={styles.resumeBtn}>Resume</button>
-        </a>
-      </div>
+
       <footer className={styles.footer}>
         <button className={styles.footerIcons}>
-          <Link href="https://twitter.com/ashliecodes" passHref>
+          <a
+            href="https://twitter.com/ashliecodes"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaTwitter size="40px" />
-          </Link>
+          </a>
         </button>
 
         <button className={styles.footerIcons}>
-          <Link href="https://www.linkedin.com/in/ashlie-p-a0131317a/" passHref>
+          <a
+            href="https://www.linkedin.com/in/ashlie-p-a0131317a/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaLinkedin size="40px" />
-          </Link>
+          </a>
         </button>
         <button className={styles.footerIcons}>
-          <Link href="https://github.com/ashliecodes" passHref>
+          <a
+            href="https://github.com/ashliecodes"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaGithub size="40px" />
-          </Link>
+          </a>
         </button>
       </footer>
     </div>
