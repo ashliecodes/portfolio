@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
+import Link from "next/link";
 import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Home() {
@@ -42,33 +43,21 @@ export default function Home() {
         </a>
       </div>
       <footer className={styles.footer}>
-        <button>
-          <a
-            href="https://twitter.com/ashliecodes"
-            target="_blank"
-            rel="noreferrer"
-          >
+        <button className={styles.footerIcons}>
+          <Link href="https://twitter.com/ashliecodes" passHref>
             <FaTwitter size="40px" />
-          </a>
+          </Link>
         </button>
 
-        <button>
-          <a
-            href="https://www.linkedin.com/in/ashlie-p-a0131317a/"
-            target="_blank"
-            rel="noreferrer"
-          >
+        <button className={styles.footerIcons}>
+          <Link href="https://www.linkedin.com/in/ashlie-p-a0131317a/" passHref>
             <FaLinkedin size="40px" />
-          </a>
+          </Link>
         </button>
-        <button>
-          <a
-            href="https://github.com/ashliecodes"
-            target="_blank"
-            rel="noreferrer"
-          >
+        <button className={styles.footerIcons}>
+          <Link href="https://github.com/ashliecodes" passHref>
             <FaGithub size="40px" />
-          </a>
+          </Link>
         </button>
       </footer>
     </div>
