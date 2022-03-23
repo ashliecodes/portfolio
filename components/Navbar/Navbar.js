@@ -19,6 +19,11 @@ function Navbar() {
         <Link href={"/contact"}>
           <a>contact</a>
         </Link>
+        <div className="hamburger" onClick={() => setOpen(!open)}>
+          <span className="line1"></span>
+          <span className="line2"></span>
+          <span className="line3"></span>
+        </div>
       </nav>
     </div>
   );
