@@ -43,7 +43,7 @@
   font-size: 1 rem;
 }
 
-.resumeBtn {
+.btn {
   border: none;
   border-radius: 10px;
   background-color: var(--secondary-text-color);
@@ -58,9 +58,10 @@
   outline: none;
 }
 
-.resumeBtn:hover {
+.btn:hover {
   box-shadow: inset 100px 0 0 0 var(--link-hover-color);
 }
+
 .footer {
   display: flex;
   flex: 1;

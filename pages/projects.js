@@ -13,7 +13,7 @@ function Projects() {
             I used an API to create an app that allows you to search for your
             favourite Studio Ghibli movies.
           </p>
-          <button>
+          <button className={styles.btn}>
             <a href="" target="_blank" rel="noreferrer">
               demo
             </a>
@@ -24,7 +24,7 @@ function Projects() {
           <h2>Hackaplanner &rarr;</h2>
           <p>A planning app that helps you stay organised</p>
 
-          <button>
+          <button className={styles.btn}>
             <a
               href="https://hackaplanner.netlify.app"
               target="_blank"
@@ -38,7 +38,7 @@ function Projects() {
         <div className={styles.card}>
           <h2>Raduno! &rarr;</h2>
           <p>An event creating app</p>
-          <button>
+          <button className={styles.btn}>
             <a
               href="https://raduno-plans.netlify.app"
               target="_blank"

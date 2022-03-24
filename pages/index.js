@@ -31,13 +31,13 @@ export default function Home() {
         <p className={styles.description}>
           I&apos;m a London based full-stack software developer who enjoys
           creating and problem-solving.
-          <br />I love all things UI, so the ability to design and build
-          front-end applications to create the best possible user experience is
+          <br />I love all things UI and front-end, so the ability to design and
+          build applications to create the best possible user experience is
           something I&apos;m very passionate about!
         </p>
         <div className={styles.btnContainer}>
           <a href="ashliecv.pdf" target="_blank">
-            <button className={styles.resumeBtn}>Resume</button>
+            <button className={styles.btn}>resume</button>
           </a>
         </div>
       </main>

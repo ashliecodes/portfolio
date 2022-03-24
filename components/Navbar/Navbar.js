@@ -10,15 +10,17 @@ function Navbar() {
             <a>&lt;ashliecodes/&gt;</a>
           </Link>
         </div>
-        <Link href={"/about"}>
-          <a>about</a>
-        </Link>
-        <Link href={"/projects"}>
-          <a>projects</a>
-        </Link>
-        <Link href={"/contact"}>
-          <a>contact</a>
-        </Link>
+        <div className={styles.navlinks}>
+          <Link href={"/about"}>
+            <a>about</a>
+          </Link>
+          <Link href={"/projects"}>
+            <a>projects</a>
+          </Link>
+          <Link href={"/contact"}>
+            <a>contact</a>
+          </Link>
+        </div>
         <div className="hamburger" onClick={() => setOpen(!open)}>
           <span className="line1"></span>
           <span className="line2"></span>
