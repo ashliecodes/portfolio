@@ -21,19 +21,20 @@ function About() {
             <br />
             <br />I did the Code First Girls Introduction into Web Development
             course and Introduction into Python Programming course which was my
-            first taste of This led me to join the School of Code where I spent
-            the last couple months on the bootcamp learning to code in order to
-            finally kickstart my long awaited career in software development.
+            first taste of coding and I wanted more - greedy I know! This led me
+            to join the School of Code where I was selected from 1800 applicants
+            training for full-time for 16-weeks in order to finally kickstart my
+            long awaited career in software development.
           </p>
-        </div>
-        <div className={styles.imgContainer}>
-          <Image
-            className={styles.img}
-            src={portfolioPic}
-            height="300px"
-            width="310px"
-            alt="a picture of ashlie"
-          />
+          <div className={styles.imgContainer}>
+            <Image
+              className={styles.img}
+              src={portfolioPic}
+              height="300px"
+              width="310px"
+              alt="a picture of ashlie"
+            />
+          </div>
         </div>
       </div>
     </div>
