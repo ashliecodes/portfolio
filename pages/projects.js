@@ -5,9 +5,10 @@ import raduno from "../images/raduno.png";
 function Projects() {
   return (
     <div className={styles.container}>
-      <h1>Projects</h1>
+      <h2 className={styles.projectTitle}>projects:</h2>
 
       <div className={styles.grid}>
+        <h2 className={styles.projectTitle}>projects:</h2>
         {/* STUDIO GHIBLI PROJECT */}
         <div className={styles.card}>
           <h2 className={styles.title}>Studio Ghibli App </h2>

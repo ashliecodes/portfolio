@@ -1,11 +1,29 @@
 import Link from "next/link";
 import styles from "./navbar.module.scss";
+import Navlinks from "./Navlinks";
 
 function Navbar() {
   return (
     <div className={styles.container}>
       <nav className={styles.nav}>
-        <div className={styles.logo}>
+        <h1 className={styles.logo}>
+          <Navlinks navLinks={"/"} name={"ashliecodes"} />
+        </h1>
+
+        <div className={styles.navContainer}>
+          <Navlinks navLinks={"/about"} name={"about"} />
+          <Navlinks navLinks={"/projects"} name={"projects"} />
+          <Navlinks navLinks={"/contact"} name={"contact"} />
+        </div>
+      </nav>
+    </div>
+  );
+}
+
+export default Navbar;
+
+{
+  /* <div className={styles.logo}>
           <Link href={"/"}>
             <a>&lt;ashliecodes/&gt;</a>
           </Link>
@@ -20,15 +38,5 @@ function Navbar() {
           <Link href={"/contact"}>
             <a>contact</a>
           </Link>
-        </div>
-        <div className="hamburger" onClick={() => setOpen(!open)}>
-          <span className="line1"></span>
-          <span className="line2"></span>
-          <span className="line3"></span>
-        </div>
-      </nav>
-    </div>
-  );
+        </div> */
 }
-
-export default Navbar;
