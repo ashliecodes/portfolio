@@ -22,9 +22,9 @@ function About() {
             <br />I did the Code First Girls Introduction into Web Development
             course and Introduction into Python Programming course which was my
             first taste of coding and I wanted more - greedy I know! This led me
-            to join the School of Code where I was selected from 1800 applicants
-            training for full-time for 16-weeks in order to finally kickstart my
-            long awaited career in software development.
+            to join the School of Code where I was selected from 1800
+            applicants, trained full-time for 16-weeks in order to finally
+            kickstart my long awaited career in software development.
           </p>
           <div className={styles.imgContainer}>
             <Image
