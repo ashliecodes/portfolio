@@ -4,7 +4,6 @@ import { FaBars } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 import { useWindowSize } from "../../hooks/useWindowSize";
 import { useState } from "react";
-import Link from "next/link";
 
 function Navbar() {
   const windowSize = useWindowSize();
@@ -17,28 +16,28 @@ function Navbar() {
 
   return (
     <div className={styles.container}>
-      <section className={sidebar ? "nav-menu active" : "nav-menu"}>
-        <nav className={styles.nav}>
-          <h1 className={styles.logo}>
-            <Navlinks navLinks={"/"} name={"ashliecodes"} />
-          </h1>
-          {windowSize.width > 730 ? (
-            <div className={styles.navContainer}>
-              <Navlinks navLinks={"/about"} name={"about"} />
-              <Navlinks navLinks={"/projects"} name={"projects"} />
-              <Navlinks navLinks={"/contact"} name={"contact"} />
-            </div>
-          ) : (
-            <div className={styles.hamburger}>
-              {!sidebar ? (
-                <FaBars onClick={showSidebar} />
-              ) : (
-                <ImCross onClick={showSidebar} />
-              )}
-            </div>
-          )}
-        </nav>
-      </section>
+      {/* <section className={sidebar ? "nav-menu active" : "nav-menu"}> */}
+      <nav className={styles.nav}>
+        <h1 className={styles.logo}>
+          <Navlinks navLinks={"/"} name={"ashliecodes"} />
+        </h1>
+        {windowSize.width > 730 ? (
+          <div className={styles.navContainer}>
+            <Navlinks navLinks={"/about"} name={"about"} />
+            <Navlinks navLinks={"/projects"} name={"projects"} />
+            <Navlinks navLinks={"/contact"} name={"contact"} />
+          </div>
+        ) : (
+          <div className={sidebar ? styles.displaySidebar : styles.hideSidebar}>
+            {!sidebar ? (
+              <FaBars className={styles.hamburger} onClick={showSidebar} />
+            ) : (
+              <ImCross className={styles.hamburger} onClick={showSidebar} />
+            )}
+          </div>
+        )}
+      </nav>
+      {/* </section> */}
     </div>
   );
 }

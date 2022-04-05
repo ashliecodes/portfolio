@@ -14,7 +14,7 @@
 .logo {
   margin-right: auto;
   display: flex;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 0.5rem;
 }
 
@@ -37,9 +37,52 @@
 
 .navItems:hover {
   color: var(--main-text-color);
+  transition: all 1s ease-out;
 }
 
 .hamburger {
-  color: var(--link-hover-color);
+  // color: var(--link-hover-color);
+  color: azure;
   font-size: x-large;
 }
+
+.displaySidebar {
+  width: 300px;
+  height: 100vh;
+  background-color: var(--link-hover-color);
+  opacity: 2;
+  position: fixed;
+  top: 0;
+  right: -100px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 1s ease;
+  right: 0;
+  display: hidden;
+}
+
+// .nav-menu {
+//   width: 300px;
+//   height: 100vh;
+//   background-color: var(--link-hover-color);
+//   opacity: 2;
+//   position: fixed;
+//   top: 0;
+//   right: -100px;
+//   z-index: 2;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   flex-direction: column;
+//   transition: all 1s ease;
+//   right: 0;
+// }
+
+// .nav-menu.active {
+//   background-color: var(--link-hover-color);
+//   transition: all 1s ease;
+//   right: 0;
+// }
