@@ -28,18 +28,18 @@
   color: var(--secondary-text-color);
   line-height: 1.15;
   font-size: 3rem;
+  font-weight: bold;
 }
 
-.intro,
-.description {
+.intro {
   text-align: center;
 }
 
 .description {
   color: var(--main-text-color);
-  margin: 4rem 0;
   line-height: 1.5;
   font-size: 1 rem;
+  text-align: center;
 }
 
 .btn {
@@ -99,11 +99,4 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
 }

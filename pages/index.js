@@ -17,7 +17,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h2 className={styles.intro}>
+        <section className={styles.intro}>
           Hi!
           <br />
           my name is <span className={styles.myName}>Ashlie</span>
@@ -26,7 +26,7 @@ export default function Home() {
           <div className={styles.fullstackMessage}>
             full-stack developer<span className={styles.fullstop}>.</span>
           </div>
-        </h2>
+        </section>
 
         <p className={styles.description}>
           I&apos;m a London based full-stack software developer who enjoys
