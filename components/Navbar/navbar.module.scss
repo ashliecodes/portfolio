@@ -54,6 +54,8 @@
   color: var(--secondary-text-color);
   font-size: larger;
   cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .cross:hover {
@@ -85,4 +87,19 @@
 .navLinks {
   list-style: none;
   font-size: xx-large;
+}
+
+.hamItems {
+  color: var(--secondary-text-color);
+  font-weight: bold;
+}
+
+.hamItems:hover {
+  color: var(--main-text-color);
+  font-weight: bold;
+}
+
+.hamTags {
+  color: #252939;
+  font-weight: bold;
 }

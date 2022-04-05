@@ -13,7 +13,6 @@ function Navbar() {
   function showSidebar() {
     setSidebar(!sidebar);
   }
-  console.log(sidebar);
 
   return (
     <div className={styles.container}>
@@ -34,7 +33,7 @@ function Navbar() {
             ) : (
               <i>
                 <ImCross className={styles.cross} onClick={showSidebar} />
-                <HamburgerMenu onClick={showSidebar} />
+                <HamburgerMenu />
               </i>
             )}
           </div>

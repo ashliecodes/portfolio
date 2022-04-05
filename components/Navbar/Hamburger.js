@@ -1,21 +1,35 @@
-import React from "react";
-import Navlinks from "./Navlinks";
 import styles from "./navbar.module.scss";
+import Link from "next/link";
 
-function HamburgerMenu({ navLinks, name }) {
+function HamburgerMenu() {
   return (
     <div>
       <li className={styles.navLinks}>
-        <Navlinks navLinks={"/about"} name={"about"} />
+        <Link href="/about" passHref>
+          <a className={styles.hamItems}>
+            <span className={styles.hamTags}>&lt;</span> about
+            <span className={styles.hamTags}>/&gt;</span>
+          </a>
+        </Link>
       </li>
 
       <br />
       <li className={styles.navLinks}>
-        <Navlinks navLinks={"/projects"} name={"projects"} />
+        <Link href="/projects" passHref>
+          <a className={styles.hamItems}>
+            <span className={styles.hamTags}>&lt;</span> projects
+            <span className={styles.hamTags}>/&gt;</span>
+          </a>
+        </Link>
       </li>
       <br />
       <li className={styles.navLinks}>
-        <Navlinks navLinks={"/contact"} name={"contact"} />
+        <Link href="/contact" passHref>
+          <a className={styles.hamItems}>
+            <span className={styles.hamTags}>&lt;</span> contact
+            <span className={styles.hamTags}>/&gt;</span>
+          </a>
+        </Link>
       </li>
     </div>
   );
