@@ -41,9 +41,21 @@
 }
 
 .hamburger {
-  // color: var(--link-hover-color);
-  color: azure;
+  color: var(--link-hover-color);
   font-size: x-large;
+}
+
+.hamburger:hover {
+  color: var(--secondary-text-color);
+}
+
+.cross {
+  color: var(--secondary-text-color);
+  font-size: larger;
+}
+
+.cross:hover {
+  color: var(--main-text-color);
 }
 
 .displaySidebar {
@@ -61,28 +73,4 @@
   flex-direction: column;
   transition: all 1s ease;
   right: 0;
-  display: hidden;
 }
-
-// .nav-menu {
-//   width: 300px;
-//   height: 100vh;
-//   background-color: var(--link-hover-color);
-//   opacity: 2;
-//   position: fixed;
-//   top: 0;
-//   right: -100px;
-//   z-index: 2;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   flex-direction: column;
-//   transition: all 1s ease;
-//   right: 0;
-// }
-
-// .nav-menu.active {
-//   background-color: var(--link-hover-color);
-//   transition: all 1s ease;
-//   right: 0;
-// }

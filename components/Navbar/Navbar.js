@@ -32,7 +32,7 @@ function Navbar() {
             {!sidebar ? (
               <FaBars className={styles.hamburger} onClick={showSidebar} />
             ) : (
-              <ImCross className={styles.hamburger} onClick={showSidebar} />
+              <ImCross className={styles.cross} onClick={showSidebar} />
             )}
           </div>
         )}
