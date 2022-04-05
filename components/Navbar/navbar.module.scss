@@ -43,6 +43,7 @@
 .hamburger {
   color: var(--link-hover-color);
   font-size: x-large;
+  cursor: pointer;
 }
 
 .hamburger:hover {
@@ -52,6 +53,7 @@
 .cross {
   color: var(--secondary-text-color);
   font-size: larger;
+  cursor: pointer;
 }
 
 .cross:hover {
@@ -73,4 +75,14 @@
   flex-direction: column;
   transition: all 1s ease;
   right: 0;
+}
+
+.displaySidebar:active {
+  right: 0;
+  transition: all 1s ease;
+}
+
+.navLinks {
+  list-style: none;
+  font-size: xx-large;
 }

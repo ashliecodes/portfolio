@@ -4,6 +4,7 @@ import { FaBars } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 import { useWindowSize } from "../../hooks/useWindowSize";
 import { useState } from "react";
+import HamburgerMenu from "./Hamburger";
 
 function Navbar() {
   const windowSize = useWindowSize();
@@ -16,7 +17,6 @@ function Navbar() {
 
   return (
     <div className={styles.container}>
-      {/* <section className={sidebar ? "nav-menu active" : "nav-menu"}> */}
       <nav className={styles.nav}>
         <h1 className={styles.logo}>
           <Navlinks navLinks={"/"} name={"ashliecodes"} />
@@ -32,12 +32,14 @@ function Navbar() {
             {!sidebar ? (
               <FaBars className={styles.hamburger} onClick={showSidebar} />
             ) : (
-              <ImCross className={styles.cross} onClick={showSidebar} />
+              <i>
+                <ImCross className={styles.cross} onClick={showSidebar} />
+                <HamburgerMenu onClick={showSidebar} />
+              </i>
             )}
           </div>
         )}
       </nav>
-      {/* </section> */}
     </div>
   );
 }
