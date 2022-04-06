@@ -29,7 +29,8 @@ function Contact() {
 
   return (
     <div className={styles.contactForm}>
-      <h2 className={styles.projectTitle}>projects:</h2>
+      <h2 className={styles.projectTitle}>contact:</h2>
+
       <form ref={form} onSubmit={sendEmail}>
         <h4 className={styles.formLabel}>
           Name
@@ -45,7 +46,12 @@ function Contact() {
         </h4>
         <h4 className={styles.formLabel}>
           Message
-          <textarea className={styles.formArea} name="user_message" />
+          <textarea
+            className={styles.formArea}
+            rows="5"
+            type="text"
+            name="user_message"
+          />
           <input className={styles.btn} type="submit" value="send" />
         </h4>
       </form>

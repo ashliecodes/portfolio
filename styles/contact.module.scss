@@ -2,8 +2,17 @@
   padding: 0 2rem;
 }
 
+.contactForm {
+  border-radius: 5px;
+  background-color: #151519;
+  padding: 20px;
+  width: 500px;
+  align-items: center;
+  justify-content: center;
+}
+
 .contactTitle {
-  color: var(--main-text-color);
+  color: var(--secondary-text-color);
   margin-top: 100px;
   padding: 0;
 }
@@ -30,28 +39,35 @@
 .formLabel {
   color: var(--link-hover-color);
 }
-.formInput {
+.formInput,
+.formArea {
   background-color: var(--secondary-text-color);
-  width: 400px;
-  height: 50px;
-  border: none;
-  border-bottom: 1px solid;
-  border-radius: 10px;
-  margin: 10px 0px;
-  font-size: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
-.formArea {
-  width: 400px;
-  height: 100px;
-  margin: 10px 0px;
-  font-size: 15px;
-  resize: none;
-  background-color: var(--secondary-text-color);
-  border-radius: 10px;
-  max-width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
+// .formArea {
+//   width: 400px;
+//   height: 100px;
+//   margin: 10px 0px;
+//   font-size: 15px;
+//   resize: none;
+//   background-color: var(--secondary-text-color);
+//   border-radius: 10px;
+//   max-width: 100%;
+//   padding-left: 20px;
+//   padding-right: 20px;
+// }
+
+@media screen and (max-width: 730px) {
+  .contactForm {
+    width: 300px;
+    margin-top: 0;
+  }
 }
