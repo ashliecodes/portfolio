@@ -7,3 +7,51 @@
   margin-top: 100px;
   padding: 0;
 }
+
+.btn {
+  border: none;
+  border-radius: 10px;
+  background-color: var(--secondary-text-color);
+  color: var(--main-background-color);
+  text-align: center;
+  width: 100px;
+  height: 40px;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 var(--link-hover-color);
+  transition: ease-out 0.2s;
+  outline: none;
+}
+
+.btn:hover {
+  box-shadow: inset 100px 0 0 0 var(--link-hover-color);
+}
+
+.formLabel {
+  color: var(--link-hover-color);
+}
+.formInput {
+  background-color: var(--secondary-text-color);
+  width: 400px;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid;
+  border-radius: 10px;
+  margin: 10px 0px;
+  font-size: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.formArea {
+  width: 400px;
+  height: 100px;
+  margin: 10px 0px;
+  font-size: 15px;
+  resize: none;
+  background-color: var(--secondary-text-color);
+  border-radius: 10px;
+  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
