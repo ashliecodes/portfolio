@@ -32,19 +32,19 @@ function Contact() {
       <form ref={form} onSubmit={sendEmail}>
         <label>
           Name
-          <input type="text" name="name" />
+          <input type="text" name="user_name" />
         </label>
         <label>
           Subject
-          <input type="text" name="subject" />
+          <input type="text" name="user_subject" />
         </label>
         <label>
           Email
-          <input type="email" name="email" />
+          <input type="email" name="user_email" />
         </label>
         <label>
           Message
-          <textarea name="message" />
+          <textarea name="user_message" />
           <input type="submit" value="Send" />
         </label>
       </form>
