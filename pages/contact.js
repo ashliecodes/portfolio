@@ -1,64 +1,52 @@
 import React from "react";
 import styles from "../styles/contact.module.scss";
 import emailjs from "@emailjs/browser";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 function Contact() {
-  const [done, setDone] = useState(false);
+  const form = useRef();
 
   function sendEmail(e) {
     e.preventDefault();
+
     emailjs
       .sendForm(
-        //"service_c71xyka "
-        "outlook ",
+        "service_c71xyka ",
         "template_7lwkj1l",
-        e.target,
+        form.current,
         "v69MsIuj0hEGECeK4"
       )
       .then(
         (result) => {
           console.log(result.text);
-          setDone(true);
         },
         (error) => {
           console.log(error.text);
         }
       );
-    e.target.reset();
   }
 
   return (
     <div className={styles.contactForm}>
       <h2 className={styles.projectTitle}>projects:</h2>
-      <form onSubmit={sendEmail}>
+      <form ref={form} onSubmit={sendEmail}>
         <label>
-          name:
-          <input type="text" name="name" placeholder="Your name" required />
+          Name
+          <input type="text" name="name" />
         </label>
-
         <label>
-          subject:
-          <input type="text" name="subject" placeholder="Subject" required />
+          Subject
+          <input type="text" name="subject" />
         </label>
-
         <label>
-          email:
-          <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
-            required
-          />
+          Email
+          <input type="email" name="email" />
         </label>
-
         <label>
-          message:
-          <input type="text" name="message" placeholder="Message" required />
+          Message
+          <textarea name="message" />
+          <input type="submit" value="Send" />
         </label>
-
-        <button type="submit">Send</button>
-        <p>{done && "Message sent, thank you!"}</p>
       </form>
     </div>
   );
