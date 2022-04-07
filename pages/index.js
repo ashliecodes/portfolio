@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
-import Link from "next/link";
+import portfolioPic from "../images/portfolioPic.jpg";
 import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Home() {
@@ -17,20 +17,31 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <section className={styles.intro}>
-          Hi!
-          <br />
-          my name is <span className={styles.myName}>Ashlie</span>
-          <br />
-          and I&apos;m a
-          <div className={styles.fullstackMessage}>
-            full-stack developer<span className={styles.fullstop}>.</span>
+        <div className={styles.wrapper}>
+          <section className={styles.intro}>
+            Hi!
+            <br />
+            my name is <span className={styles.myName}>Ashlie</span>
+            <br />
+            and I&apos;m a
+            <div className={styles.fullstackMessage}>
+              full-stack developer<span className={styles.fullstop}>.</span>
+            </div>
+          </section>
+          <div className={styles.imgContainer}>
+            <Image
+              className={styles.homeImg}
+              src={portfolioPic}
+              height="200px"
+              width="210px"
+              alt="a picture of ashlie"
+            />
           </div>
-        </section>
-
+        </div>
         <p className={styles.description}>
           I&apos;m a London based full-stack software developer who enjoys
           creating and problem-solving.
+          <br />
           <br />I love all things UI and front-end, so the ability to design and
           build applications to create the best possible user experience is
           something I&apos;m very passionate about!

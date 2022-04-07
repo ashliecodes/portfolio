@@ -32,9 +32,9 @@
   font-weight: bold;
 }
 
-.intro {
-  text-align: center;
-}
+// .intro {
+//   text-align: center;
+// }
 
 .description {
   color: var(--main-text-color);
@@ -100,4 +100,19 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
+}
+
+.homeImg {
+  border-radius: 50%;
+  max-width: 100%;
+  display: flex;
+  position: relative;
+}
+
+@media screen and (min-width: 730px) {
+  .wrapper {
+    display: flex;
+    margin-left: 50px;
+    gap: 90px;
+  }
 }

@@ -23,7 +23,7 @@ function Projects() {
                   src={portfolio}
                   height="250px"
                   width="390px"
-                  alt="a picture of ashlie"
+                  alt="a picture of my portfolio"
                 />
               </div>
               <p className={styles.projDesc}>
@@ -49,6 +49,44 @@ function Projects() {
                 </a>
               </button>
             </div>
+
+            {/* RADUNO PROJECT */}
+            <div className={styles.card}>
+              <h2 className={styles.title}>Raduno!: </h2>
+
+              <div className={styles.imgContainer}>
+                <Image
+                  className={styles.img}
+                  src={raduno}
+                  height="300px"
+                  width="390px"
+                  alt="a picture of the raduno project"
+                />
+              </div>
+              <p className={styles.projDesc}>
+                An event planning app which allows you to catch up without the
+                fuss.
+              </p>
+              <button className={styles.btn}>
+                <a
+                  href="https://raduno-plans.netlify.app"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  demo
+                </a>
+              </button>
+
+              <button className={styles.btn}>
+                <a
+                  href="https://github.com/ashliecodes/final-project-front-end-hexcode"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  see code
+                </a>
+              </button>
+            </div>
             {/* HACKAPLANNER PROJECT */}
             <div className={styles.card}>
               <h2 className={styles.title}>Hackaplanner:</h2>
@@ -58,7 +96,7 @@ function Projects() {
                   src={hackerplanner}
                   height="300px"
                   width="390px"
-                  alt="a picture of ashlie"
+                  alt="a picture of the hackerplanner project"
                 />
               </div>
               <p className={styles.projDesc}>
@@ -78,7 +116,7 @@ function Projects() {
 
               <button className={styles.btn}>
                 <a
-                  href="https://github.com/SchoolOfCode/national-project-week-coding-cats"
+                  href="https://github.com/ashliecodes/national-project-week-coding-cats"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -86,26 +124,27 @@ function Projects() {
                 </a>
               </button>
             </div>
-            {/* RADUNO PROJECT */}
-            <div className={styles.card}>
-              <h2 className={styles.title}>Raduno!: </h2>
 
+            {/* SUDIO GHIBLI PROJECT */}
+            <div className={styles.card}>
+              <h2 className={styles.title}>Studio Ghibli movie finder:</h2>
               <div className={styles.imgContainer}>
-                <Image
+                {/* <Image
                   className={styles.img}
-                  src={raduno}
+                  src={hackerplanner}
                   height="300px"
                   width="390px"
                   alt="a picture of ashlie"
-                />
+                /> */}
               </div>
               <p className={styles.projDesc}>
-                An event planning app which allows you to catch up without the
-                fuss.
+                An app that uses an API to find your favourite Studio Ghibli
+                movies!
               </p>
+
               <button className={styles.btn}>
                 <a
-                  href="https://raduno-plans.netlify.app"
+                  // href="https://hackaplanner.netlify.app"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -115,7 +154,7 @@ function Projects() {
 
               <button className={styles.btn}>
                 <a
-                  href="https://github.com/SchoolOfCode/final-project-front-end-hexcode"
+                  // href="https://github.com/ashliecodes/national-project-week-coding-cats"
                   target="_blank"
                   rel="noreferrer"
                 >
