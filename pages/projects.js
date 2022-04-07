@@ -16,6 +16,7 @@ function Projects() {
           <section className={styles.grid}>
             {/* PORTFOLIO */}
             <div className={styles.card}>
+              <h2 className={styles.title}>My portfolio:</h2>
               <div className={styles.imgContainer}>
                 <Image
                   className={styles.img}
