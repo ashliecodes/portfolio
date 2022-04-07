@@ -14,6 +14,12 @@
   margin-top: 98px;
 }
 
+@media screen and (max-width: 730px) {
+  .projectTitle {
+    margin-top: 30px;
+  }
+}
+
 .hamTags {
   color: var(--link-hover-color);
 }
@@ -81,10 +87,4 @@
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
-}
-
-@media screen and (max-width: 730px) {
-  .projectsTitle {
-    margin-top: 10px;
-  }
 }
