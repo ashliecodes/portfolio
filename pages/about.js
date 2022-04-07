@@ -6,12 +6,12 @@ function About() {
   return (
     <div className={styles.container}>
       <div className={styles.main}>
-        <div className={styles.aboutDescription}>
+        <div>
           <h2 className={styles.aboutTitle}>
             <span className={styles.hamTags}>&lt;</span>about
             <span className={styles.hamTags}>/&gt;</span>
           </h2>
-          <p className={styles.paragraph}>
+          <p className={styles.aboutDescription}>
             Hi there, my name is Ashlie! After working in the legal industry as
             a legal assistant, I decided that law wasn&apos;t for me. I felt
             unstimulated and became underwhelmed quickly. I am fun and creative
