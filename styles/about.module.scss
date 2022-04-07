@@ -3,6 +3,15 @@
   display: flex;
 }
 
+.aboutTitle {
+  color: var(--secondary-text-color);
+  margin-top: 0px;
+}
+
+.hamTags {
+  color: var(--link-hover-color);
+}
+
 .img {
   border-radius: 50%;
   max-width: 100%;
