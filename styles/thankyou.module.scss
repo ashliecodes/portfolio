@@ -1,0 +1,30 @@
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.myName,
+.fullstackMessage {
+  color: var(--link-hover-color);
+  text-align: center;
+}
+
+.intro,
+.fullstop {
+  color: var(--secondary-text-color);
+  line-height: 1.15;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}

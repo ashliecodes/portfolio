@@ -1,7 +1,7 @@
-import React from "react";
 import styles from "../styles/contact.module.scss";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
+import Link from "next/link";
 
 function Contact() {
   const form = useRef();
@@ -43,6 +43,7 @@ function Contact() {
                 className={styles.formInput}
                 type="text"
                 name="user_name"
+                placeholder="Full name"
               />
             </h4>
             <h4 className={styles.formLabel}>
@@ -51,6 +52,7 @@ function Contact() {
                 className={styles.formInput}
                 type="text"
                 name="user_subject"
+                placeholder="Subject"
               />
             </h4>
             <h4 className={styles.formLabel}>
@@ -59,6 +61,7 @@ function Contact() {
                 className={styles.formInput}
                 type="email"
                 name="user_email"
+                placeholder="Email address"
               />
             </h4>
             <h4 className={styles.formLabel}>
@@ -72,7 +75,9 @@ function Contact() {
               />
             </h4>
             <div className={styles.btnSection}>
-              <input className={styles.btn} type="submit" value="send" />
+              <Link href="/thankyou" passHref>
+                <input className={styles.btn} type="submit" value="send" />
+              </Link>
             </div>
           </form>
         </div>
