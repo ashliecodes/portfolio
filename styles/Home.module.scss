@@ -113,6 +113,7 @@
     display: flex;
     margin-left: 50px;
     gap: 90px;
+    margin-top: 200px;
   }
 }
 
@@ -120,7 +121,9 @@
   .imgContainer {
     margin-left: 50px;
   }
-
+  .wrapper {
+    margin-top: 10px;
+  }
   .myName,
   .fullstackMessage,
   .intro,
