@@ -116,3 +116,16 @@
     gap: 90px;
   }
 }
+
+@media screen and (max-width: 730px) {
+  .imgContainer {
+    margin-left: 50px;
+  }
+
+  .myName,
+  .fullstackMessage,
+  .intro,
+  .fullstop {
+    text-align: center;
+  }
+}

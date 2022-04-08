@@ -28,7 +28,7 @@ export default function Home() {
               full-stack developer<span className={styles.fullstop}>.</span>
             </div>
           </section>
-          <div className={styles.imgContainer}>
+          <i className={styles.imgContainer}>
             <Image
               className={styles.homeImg}
               src={portfolioPic}
@@ -36,7 +36,7 @@ export default function Home() {
               width="210px"
               alt="a picture of ashlie"
             />
-          </div>
+          </i>
         </div>
         <p className={styles.description}>
           I&apos;m a London based full-stack software developer who enjoys
