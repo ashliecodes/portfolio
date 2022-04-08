@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import portfolioPic from "../images/portfolioPic.jpg";
 import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
+import Footer from "../components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -40,49 +41,18 @@ export default function Home() {
         </div>
         <p className={styles.description}>
           I&apos;m a London based full-stack software developer who enjoys
-          creating and problem-solving.
-          <br />
-          <br />I love all things UI and front-end, so the ability to design and
-          build applications to create the best possible user experience is
-          something I&apos;m very passionate about!
+          creating and problem-solving. I love all things UI and front-end, so
+          the ability to design and build applications to create the best
+          possible user experience is something I&apos;m very passionate about!
         </p>
         <div className={styles.btnContainer}>
           <a href="ashliecv.pdf" target="_blank">
             <button className={styles.btn}>resume</button>
           </a>
         </div>
+        <br />
+        <Footer />
       </main>
-
-      <footer className={styles.footer}>
-        <button className={styles.footerIcons}>
-          <a
-            href="https://twitter.com/ashliecodes"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaTwitter size="40px" />
-          </a>
-        </button>
-
-        <button className={styles.footerIcons}>
-          <a
-            href="https://www.linkedin.com/in/ashlie-p-a0131317a/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaLinkedin size="40px" />
-          </a>
-        </button>
-        <button className={styles.footerIcons}>
-          <a
-            href="https://github.com/ashliecodes"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaGithub size="40px" />
-          </a>
-        </button>
-      </footer>
     </div>
   );
 }

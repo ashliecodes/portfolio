@@ -32,10 +32,6 @@
   font-weight: bold;
 }
 
-// .intro {
-//   text-align: center;
-// }
-
 .description {
   color: var(--main-text-color);
   line-height: 1.5;
@@ -125,7 +121,8 @@
   .myName,
   .fullstackMessage,
   .intro,
-  .fullstop {
+  .fullstop,
+  .description {
     text-align: center;
   }
 }

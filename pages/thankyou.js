@@ -1,3 +1,4 @@
+import Footer from "../components/Footer/Footer";
 import styles from "../styles/thankyou.module.scss";
 
 function Thankyou() {
@@ -11,6 +12,8 @@ function Thankyou() {
             <br />
             <span className={styles.myName}>Take care!</span>
             <br />
+            <br />
+            <Footer />
           </section>
         </div>
       </main>
