@@ -28,13 +28,13 @@ export default function Home() {
             <div className={styles.fullstackMessage}>
               <ul className={styles.dynamicText}>
                 <li>
-                  <span>developer</span>
+                  <span className={styles.transitionWords}>developer</span>
                 </li>
                 <li>
-                  <span>designer</span>
+                  <span className={styles.transitionWords}>designer</span>
                 </li>
                 <li>
-                  <span>tech-lover</span>
+                  <span className={styles.transitionWords}>tech-lover</span>
                 </li>
               </ul>
             </div>
