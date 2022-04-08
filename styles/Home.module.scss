@@ -19,13 +19,16 @@
   margin-top: 40px;
 }
 
+.firstMessage {
+  text-align: center;
+}
+
 .myName,
 .fullstackMessage {
   color: var(--link-hover-color);
 }
 
-.intro,
-.fullstop {
+.intro {
   color: var(--secondary-text-color);
   line-height: 1.15;
   font-size: 3rem;
@@ -124,5 +127,50 @@
   .fullstop,
   .description {
     text-align: center;
+  }
+}
+
+.fullstackMessage .dynamicText {
+  height: 47px;
+  line-height: 47px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.dynamicText li {
+  list-style: none;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(3) infinite;
+}
+
+@keyframes slide {
+  100% {
+    top: -150px;
+  }
+}
+
+.dynamicText li {
+  position: relative;
+}
+
+.dynamicText li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--main-background-color);
+  border-left: 2px solid;
+  animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing {
+  30%,
+  60% {
+    left: calc(80% + 30px);
+  }
+  100% {
+    left: 0;
   }
 }

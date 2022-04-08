@@ -20,13 +20,23 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.wrapper}>
           <section className={styles.intro}>
-            Hi!
-            <br />
-            my name is <span className={styles.myName}>Ashlie</span>
-            <br />
-            and I&apos;m a
+            <section className={styles.firstMessage}>
+              Hi there, my name is <span className={styles.myName}>Ashlie</span>
+              <br />
+              and I am a
+            </section>
             <div className={styles.fullstackMessage}>
-              full-stack developer<span className={styles.fullstop}>.</span>
+              <ul className={styles.dynamicText}>
+                <li>
+                  <span>developer</span>
+                </li>
+                <li>
+                  <span>designer</span>
+                </li>
+                <li>
+                  <span>tech-lover</span>
+                </li>
+              </ul>
             </div>
           </section>
           <i className={styles.imgContainer}>
