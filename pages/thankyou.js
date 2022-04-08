@@ -9,7 +9,6 @@ function Thankyou() {
           <section className={styles.intro}>
             Thank you for your message, I&apos;ll get back to you soon.
             <br />
-            <br />
             <span className={styles.myName}>Take care!</span>
             <br />
             <br />
