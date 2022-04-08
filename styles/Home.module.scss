@@ -131,7 +131,7 @@
 }
 
 .fullstackMessage .dynamicText {
-  height: 47px;
+  height: 49px;
   line-height: 47px;
   overflow: hidden;
   text-align: center;
@@ -141,7 +141,7 @@
   list-style: none;
   position: relative;
   top: 0;
-  animation: slide 12s steps(3) infinite;
+  animation: slide 15s steps(3) infinite;
 }
 
 @keyframes slide {
@@ -162,7 +162,7 @@
   width: 100%;
   background-color: var(--main-background-color);
   border-left: 2px solid;
-  animation: typing 3s steps(10) infinite;
+  animation: typing 5s steps(10) infinite;
 }
 
 @keyframes typing {
