@@ -1,10 +1,11 @@
 import styles from "../styles/contact.module.scss";
 import emailjs from "@emailjs/browser";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Link from "next/link";
 
 function Contact() {
   const form = useRef();
+  const [messageSent, setMessageSent] = useState(false);
 
   function sendEmail(e) {
     e.preventDefault();
@@ -19,6 +20,7 @@ function Contact() {
       .then(
         (result) => {
           console.log("SUCCESS!", result.text);
+          setMessageSent(true);
         },
         (error) => {
           console.log("FAILED", error.text);
@@ -75,9 +77,18 @@ function Contact() {
               />
             </h4>
             <div className={styles.btnSection}>
-              <Link href="/thankyou" passHref>
-                <input className={styles.btn} type="submit" value="send" />
-              </Link>
+              {/* <Link  href="/thankyou" passHref> */}
+              <input
+                className={styles.btn}
+                type="submit"
+                value="send"
+                action="/thankyou"
+              />
+              <p className={styles.thankYou}>
+                {messageSent &&
+                  "Thank you, your message has been sent. I'll get back to you soon!"}
+              </p>
+              {/* </Link> */}
             </div>
           </form>
         </div>
