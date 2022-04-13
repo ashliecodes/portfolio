@@ -3,6 +3,7 @@ import Image from "next/image";
 import raduno from "../images/raduno.png";
 import hackerplanner from "../images/hackerplanner.png";
 import portfolio from "../images/portfolio.png";
+import studioghibliapp from "../images/studioghibliapp.png";
 
 function Projects() {
   return (
@@ -95,7 +96,7 @@ function Projects() {
                   className={styles.img}
                   src={hackerplanner}
                   height="300px"
-                  width="390px"
+                  width="500px"
                   alt="a picture of the hackerplanner project"
                 />
               </div>
@@ -129,13 +130,13 @@ function Projects() {
             <div className={styles.card}>
               <h2 className={styles.title}>Studio Ghibli movie finder:</h2>
               <div className={styles.imgContainer}>
-                {/* <Image
+                <Image
                   className={styles.img}
-                  src={hackerplanner}
-                  height="300px"
+                  src={studioghibliapp}
+                  height="250px"
                   width="390px"
-                  alt="a picture of ashlie"
-                /> */}
+                  alt="studio ghibli app"
+                />
               </div>
               <p className={styles.projDesc}>
                 An app that uses an API to find your favourite Studio Ghibli
@@ -144,7 +145,7 @@ function Projects() {
 
               <button className={styles.btn}>
                 <a
-                  // href="https://hackaplanner.netlify.app"
+                  href="https://studio-ghibli-movie-finder.netlify.app/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -154,7 +155,7 @@ function Projects() {
 
               <button className={styles.btn}>
                 <a
-                  // href="https://github.com/ashliecodes/national-project-week-coding-cats"
+                  href="https://github.com/ashliecodes/studio-ghibli-app/tree/main/studio-ghibli-app"
                   target="_blank"
                   rel="noreferrer"
                 >
