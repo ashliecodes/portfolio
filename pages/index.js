@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>&lt;ashliecodes/&gt;</title>
+        <title>&lt;/ashliecodes&gt;</title>
         <meta
           name="description"
           content="Portfolio created by &lt;ashliecodes/&gt;"

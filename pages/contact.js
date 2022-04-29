@@ -34,8 +34,8 @@ function Contact() {
       <div className={styles.main}>
         <div className={styles.contactForm}>
           <h2 className={styles.contactTitle}>
-            <span className={styles.hamTags}>&lt;</span>contact
-            <span className={styles.hamTags}>/&gt;</span>
+            <span className={styles.hamTags}>&lt;</span>/contact
+            <span className={styles.hamTags}>&gt;</span>
           </h2>
 
           <form className={styles.contacForm} ref={form} onSubmit={sendEmail}>

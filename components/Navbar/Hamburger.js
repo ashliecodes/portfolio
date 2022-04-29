@@ -7,8 +7,8 @@ function HamburgerMenu() {
       <li className={styles.navLinks}>
         <Link href="/about" passHref>
           <a className={styles.hamItems}>
-            <span className={styles.hamTags}>&lt;</span> about
-            <span className={styles.hamTags}>/&gt;</span>
+            <span className={styles.hamTags}>&lt;</span> /about
+            <span className={styles.hamTags}>&gt;</span>
           </a>
         </Link>
       </li>
@@ -17,8 +17,8 @@ function HamburgerMenu() {
       <li className={styles.navLinks}>
         <Link href="/projects" passHref>
           <a className={styles.hamItems}>
-            <span className={styles.hamTags}>&lt;</span> projects
-            <span className={styles.hamTags}>/&gt;</span>
+            <span className={styles.hamTags}>&lt;</span> /projects
+            <span className={styles.hamTags}>&gt;</span>
           </a>
         </Link>
       </li>
@@ -26,8 +26,8 @@ function HamburgerMenu() {
       <li className={styles.navLinks}>
         <Link href="/contact" passHref>
           <a className={styles.hamItems}>
-            <span className={styles.hamTags}>&lt;</span> contact
-            <span className={styles.hamTags}>/&gt;</span>
+            <span className={styles.hamTags}>&lt;</span> /contact
+            <span className={styles.hamTags}>&gt;</span>
           </a>
         </Link>
       </li>
