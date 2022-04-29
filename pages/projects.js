@@ -11,7 +11,7 @@ function Projects() {
       <div className={styles.main}>
         <div>
           <h2 className={styles.projectTitle}>
-            <span className={styles.hamTags}>&lt;</span>/projects
+            <span className={styles.hamTags}>&lt;/</span>projects
             <span className={styles.hamTags}>&gt;</span>
           </h2>
           <section className={styles.grid}>

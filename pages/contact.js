@@ -34,7 +34,7 @@ function Contact() {
       <div className={styles.main}>
         <div className={styles.contactForm}>
           <h2 className={styles.contactTitle}>
-            <span className={styles.hamTags}>&lt;</span>/contact
+            <span className={styles.hamTags}>&lt;/</span>contact
             <span className={styles.hamTags}>&gt;</span>
           </h2>
 

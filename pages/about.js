@@ -8,7 +8,7 @@ function About() {
       <div className={styles.main}>
         <div>
           <h2 className={styles.aboutTitle}>
-            <span className={styles.hamTags}>&lt;</span>/about
+            <span className={styles.hamTags}>&lt;/</span>about
             <span className={styles.hamTags}>&gt;</span>
           </h2>
           <div className={styles.wrapper}>
