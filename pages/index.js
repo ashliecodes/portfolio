@@ -12,7 +12,7 @@ export default function Home() {
         <title>&lt;/ashliecodes&gt;</title>
         <meta
           name="description"
-          content="Portfolio created by &lt;ashliecodes/&gt;"
+          content="Portfolio created by &lt;/ashliecodes&gt;"
         />
         <link rel="icon" href="favicon.ico" />
       </Head>
