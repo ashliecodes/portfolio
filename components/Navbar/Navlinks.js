@@ -5,9 +5,9 @@ function Navlinks({ navLinks, name }) {
   return (
     <Link href={navLinks} passHref>
       <a className={styles.navItems}>
-        <span className={styles.navTags}>&lt;</span>
+        <span className={styles.navTags}>&lt;/</span>
         {name}
-        <span className={styles.navTags}>/&gt;</span>
+        <span className={styles.navTags}>&gt;</span>
       </a>
     </Link>
   );
