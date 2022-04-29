@@ -31,6 +31,13 @@ function HamburgerMenu() {
           </a>
         </Link>
       </li>
+      <li>
+        <div className={styles.btnContainer}>
+          <a href="ashliecv.pdf" target="_blank">
+            <button className={styles.btn}>resume</button>
+          </a>
+        </div>
+      </li>
     </div>
   );
 }
